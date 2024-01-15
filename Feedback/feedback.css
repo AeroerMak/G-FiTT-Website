@@ -1,0 +1,85 @@
+.feedbackform {
+	width:auto;
+	margin: auto;
+}
+.feedbackform hr{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-bottom-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: dotted;
+	border-left-style: none;
+	border-bottom-color: #CCC;
+}
+/****************************************************************/
+::-webkit-input-placeholder {font-family:Arial, Helvetica, sans-serif; color:#666; font-size: 12px;}
+:-moz-placeholder {font-family:Arial, Helvetica, sans-serif; color:#666; font-size: 12px;}
+::-moz-placeholder {font-family:Arial, Helvetica, sans-serif; color:#666; font-size: 12px;}
+:-ms-input-placeholder {font-family:Arial, Helvetica, sans-serif; color:#666; font-size: 12px;}
+
+/****************************************************************/
+.feedbackform input[type=text],
+.feedbackform input[type=number],
+.feedbackform input[type=tel],
+.feedbackform input[type=email],
+.feedbackform input[type=date],
+.feedbackform input[type=file],
+.feedbackform input[type=submit],
+.feedbackform textarea,
+.feedbackform select,
+#captcha
+{
+	border: 2px solid #CCC;
+	border-radius:5px;
+	padding: 10px;
+	margin-top:5px;
+	margin-bottom:5px;
+	outline:none;
+	box-sizing : border-box;
+	width: 100%;
+	-webkit-appearance: none;
+	}
+.feedbackform .margin_right{
+	margin-right:5px;
+	}
+.feedbackform .dua{width:50%;}
+	
+/****************************************************************/
+.feedbackform flex{
+	display: -webkit-flex; /* Safari */
+  display: flex;
+	}
+
+@media only screen and (max-width: 540px) {
+.feedbackform flex{
+  display: block;
+	}
+.feedbackform .margin_right{
+	margin-right:0px;
+	}	
+	
+}
+/****************************************************************/
+.feedbackform input[type=submit]{
+	color: #FFF;
+	background-color: #069;
+	cursor:pointer;
+}
+
+/****************************************************************/
+.feedbackform #captcha{
+	background-image: url(feedback/captcha.gif);
+	background-size: cover;
+	color:#000;
+	text-align:center;
+	/* disable select */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-size:18px;
+
+}
